@@ -20,8 +20,17 @@
             .hero {
                 background-color: #E8F1F0 !important;
             }
+            .box:hover {
+                border: 5px solid #E8F1F0 !important;
+            }
             .title {
-
+                font-size: 28px !important;
+            }
+            .subtitle {
+                color: #7A9E9F !important;
+            }
+            .footer {
+                border-top: 3px solid white !important;
             }
         </style>
     </head>
@@ -42,27 +51,64 @@
             </div>
         </nav>
         <section class = "section">
-            <div class = "container">
-                <div class = content>
-                    <h1 class = "title is-size-3 has-text-weight-bold">
-                        Hi, I'm Lynn! I'm a software engineering student based in Vancouver, BC.
-                    </h1>
+            <div class = "columns">
+                <div class="column is-1"></div>
+                <div class="column">
+                    <div class = content>
+                        <h1 class = "title is-size-3 has-text-weight-bold">
+                            Hi, I'm Lynn! I'm a software engineering student based in Vancouver, BC.
+                        </h1>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="hero is-large is-light">
+        <section class="hero is-small">
             <div class="hero-body">
-                <div class="container has-text-centered">
-                    <!--figure class="image">
-                    	<img src="assets/hololens.png">
-                    </figure-->
-                    <h1 class="title is-size-4">
-                        Placeholder <br> Holographic Cell Visualizer
-                    </h1>
-                    <h2 class="subtitle">
-                        Placeholder
-                    </h2>
+                <!--div class="columns">
+                    <div class="column is-1"></div>
+                	<div class="column">
+                        <p class="content">Projects</p>
+                    </div>
+                </div-->
+                <br>
+                <div class="columns">
+                    <div class="column is-1"></div>
+                	<div class="column is-5">
+                        <a href="holocell.html">
+                            <div class = "box is-white is-radiusless is-shadowless is-paddingless is-marginless">
+                                <figure class="image is-3by2">
+                                	<img src="assets/images/hololens.png">
+                                </figure>
+                                <br>
+                                <h2 class = "subtitle has-text-centered is-size-4 has-text-weight-bold">
+                                    Holographic Cell Visualizer
+                                </h2>
+                                <h3 class = "content has-text-centered is-size-6">
+                                    Summer 2018<br><br>
+                                </h3>
+                            </div>
+                        </a>
+                	</div>
+                    <div class="column"></div>
+                    <div class="column is-5">
+                        <a href=#>
+                            <div class = "box is-white is-radiusless is-shadowless is-paddingless is-marginless">
+                                <figure class="image is-3by2">
+                                	<img src="assets/images/statscan.jpg">
+                                </figure>
+                                <br>
+                                <h2 class = "subtitle has-text-centered is-size-4 has-text-weight-bold">
+                                    PTAX Redesign
+                                </h2>
+                                <h3 class = "content has-text-centered is-size-6">
+                                    Summer 2017<br><br>
+                                </h3>
+                            </div>
+                        </a>
+                	</div>
+                    <div class="column is-1"></div>
                 </div>
+                <br>
             </div>
         </section>
         <footer class="footer">
@@ -71,13 +117,13 @@
                 <div class="column">
                     <nav class="navbar is-light" role="navigation">
                         <div class="navbar-brand">
-                            <div class="navbar-item has-text-right">
+                            <div class="navbar-item has-text-left">
                                 Coded by Lynn Zhang
                             </div>
                         </div>
                         <div class="navbar-menu">
-                            <div class="navbar-end">
-                                <a class="navbar-item" href = "mailto:lynnzhang7@gmail.com" target="_blank" target = "_blank">
+                            <div class="navbar-end is-mobile">
+                                <a class="navbar-item" href = "mailto:lynnzhang7@gmail.com" target = "_blank">
                                     <span class="icon">
                                         <i class="fas fa-envelope"></i>
                                     </span>

@@ -6,7 +6,7 @@
         <title>Lynn Zhang</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Gilda+Display">
         <link rel="stylesheet" href="node_modules/bulma-start/css/main.css">
         <link rel="stylesheet" href="assets/styles/main.css">
         <!--link rel="stylesheet" href="assets/styles/debug.css"-->
@@ -17,17 +17,14 @@
                     font-size: 90%;
                 }
             }
-            .hero {
-                background-color: #E8F1F0 !important;
+            .hero, .box {
+                background-color: #E1E9E8
             }
             .box:hover {
-                border: 5px solid #E8F1F0 !important;
+                border: 5px solid transparent !important;
             }
             .title {
                 font-size: 28px !important;
-            }
-            .subtitle {
-                color: #7A9E9F !important;
             }
             .footer {
                 border-top: 3px solid white !important;
@@ -52,14 +49,15 @@
         </nav>
         <section class = "section">
             <div class = "columns">
-                <div class="column is-1"></div>
+                <div class="column is-2"></div>
                 <div class="column">
                     <div class = content>
-                        <h1 class = "title is-size-3 has-text-weight-bold">
+                        <h1 class = "title is-size-3 has-text-weight-bold" id = "intro">
                             Hi, I'm Lynn! I'm a software engineering student based in Vancouver, BC.
                         </h1>
                     </div>
                 </div>
+                <div class="column is-3"></div>
             </div>
         </section>
         <section class="hero is-small">
@@ -72,54 +70,51 @@
                 </div-->
                 <br>
                 <div class="columns">
-                    <div class="column is-1"></div>
-                	<div class="column is-5">
+                    <div class="column is-2"></div>
+                	<div class="column">
                         <a href="holocell.html">
-                            <div class = "box is-white is-radiusless is-shadowless is-paddingless is-marginless">
-                                <figure class="image is-3by2">
-                                	<img src="assets/images/hololens.png">
+                            <div class = "box is-radiusless is-shadowless is-paddingless">
+                                <figure class="image is-square">
+                                	<img src="assets/images/holo.png">
                                 </figure>
-                                <br>
-                                <h2 class = "subtitle has-text-centered is-size-4 has-text-weight-bold">
-                                    Holographic Cell Visualizer
-                                </h2>
-                                <h3 class = "content has-text-centered is-size-6">
+                                <br><br>
+                                <h3 class = "subtitle has-text-centered is-size-6 has-text-dark">
                                     Summer 2018<br><br>
                                 </h3>
+                                <h2 class = "title has-text-centered is-size-3 has-text-weight-bold">
+                                    Holographic Cell Visualizer
+                                </h2>
                             </div>
                         </a>
                 	</div>
-                    <div class="column"></div>
-                    <div class="column is-5">
-                        <a href=#>
-                            <div class = "box is-white is-radiusless is-shadowless is-paddingless is-marginless">
-                                <figure class="image is-3by2">
-                                	<img src="assets/images/statscan.jpg">
+                    <div class="column">
+                        <a href="holocell.html">
+                            <div class = "box is-radiusless is-shadowless is-paddingless">
+                                <figure class="image is-square">
+                                	<img src="assets/images/ottawa.jpg">
                                 </figure>
-                                <br>
-                                <h2 class = "subtitle has-text-centered is-size-4 has-text-weight-bold">
-                                    PTAX Redesign
-                                </h2>
-                                <h3 class = "content has-text-centered is-size-6">
+                                <br><br>
+                                <h3 class = "subtitle has-text-centered is-size-6 has-text-dark">
                                     Summer 2017<br><br>
                                 </h3>
+                                <h2 class = "title has-text-centered is-size-3 has-text-weight-bold">
+                                    PTAX Redesign
+                                </h2>
                             </div>
                         </a>
                 	</div>
-                    <div class="column is-1"></div>
+                    <div class="column is-2"></div>
                 </div>
                 <br>
             </div>
         </section>
         <footer class="footer">
             <div class="columns">
-                <div class="column is-1"></div>
+                <div class="column is-2"></div>
                 <div class="column">
                     <nav class="navbar is-light" role="navigation">
                         <div class="navbar-brand">
-                            <div class="navbar-item has-text-left">
-                                Coded by Lynn Zhang
-                            </div>
+                            <div class="navbar-item has-text-left">Coded by Lynn Zhang</div>
                         </div>
                         <div class="navbar-menu">
                             <div class="navbar-end is-mobile">
@@ -142,7 +137,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="column is-1"></div>
+                <div class="column is-2"></div>
             </div>
         </footer>
     </body>

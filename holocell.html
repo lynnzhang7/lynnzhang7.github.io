@@ -12,31 +12,41 @@
         <!--link rel="stylesheet" href="assets/styles/debug.css"-->
         <script src = "scripts/navbar.js"></script>
         <style>
-            @media (max-width: 672px) {
+            @media (max-width: 800px) {
                 :root {
-                    font-size: 90%;
+                    font-size: 80%;
+                }
+            }
+            @media (max-width: 526px) {
+                #holocell {
+                    font-size: 25px !important;
                 }
             }
             p {
                 font-size: 110% !important;
                 line-height: 1.5 !important;
             }
-            h1 {
-                color: #7A9E9F !important;
-                line-height: 1.5 !important;
+            .h2 {
+                color: white;
             }
-            h2 {
-                color: #C8D1DF !important;
+            .box {
+                position: relative !important;
+                bottom: 20% !important;
+                height: 500px;
+            #hero-top {
+                background: linear-gradient(to bottom, white 0%,white 50%,white 50%,#E8F1F0 50%,#E8F1F0 100%); /* W3C */
             }
-            .title {
-                font-size: 28px !important;
+            #hero-bottom {
+                background-color: #E8F1F0; /* E1E9E8*/
             }
+
+        }
         </style>
     </head>
     <body>
         <nav class = "navbar" role = "navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <!-- navbar items, navbar burger... -->
+                <!--a class="navbar-item" href="index.html"> Lynn Zhang </a-->
                 <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -50,29 +60,116 @@
                 </div>
             </div>
         </nav>
-        <section class = "section">
-            <div class="columns">
-                <div class="column is-2"></div>
-                <div class="column">
-                    <h1 class = "title is-size-3 has-text-weight-bold">Mixed Reality: The Holographic Cell Visualizer</h1>
-                    <h2 class = "subtitle is-size-5">Microsoft Garage Vancouver  ·  Summer 2018</h2>
-                    <hr>
-                    <br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4OouJKwl5bM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section class = "hero is-small" id = "hero-top">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <figure class="image">
+                            <img src="assets/images/holo_full.jpg">
+                            <div class="level is-overlay" style="top: 50%; transform: translate(0%, -50%);">
+                                <div class="level-item">
+                                    <div>
+                                        <h1 class = "subtitle is-size-6 has-text-centered has-text-light">Microsoft Garage </h1><br><br><br>
+                                        <h1 class = "title is-size-1 has-text-centered has-text-light" id="holocell">Holographic Cell Visualizer </h1><br><br><br>
+                                        <h1 class = "subtitle is-size-6 has-text-centered has-text-light">Summer 2018 </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
-                <div class="column is-2"></div>
+            </div>
+        </section>
+        <section class = "hero is-small" id = "hero-bottom">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">The Project</p>
+                    </div>
+                    <div class="column">
+                        <div class = "content">
+                            <p>
+                                Holographic Cell Visualizer is a mixed reality HoloLens application for
+                                cancer researchers, developed by interns from the Microsoft Garage program. Our application enables
+                                researchers to intuitively interact with and explore holograms of 3D genomic data.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">Microsoft Garage</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            The Microsoft Garage program is a 16 week internship, where interns
+                            are typically put in groups of six &mdash; five developers, one designer &mdash; to focus on a single project.
+                            Most of these projects start from scratch, but my team had the unique opportunity to
+                            carry on a project that was started by a previous intern group.
+                            <br><br>
+                            The project that we started on already had the major components of our app down: the processing
+                            and rendering of the 50,000 cells, different modes to explore different aspects of the data, and the
+                            beginnings of a companion web application. When my intern group started, we reassessed the state of
+                            the project with our sponsor BC Cancer, and decided on the three key features we wanted to add.<br><br>
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <div class = "notification has-text-light" style="background: #678B8C;">
+                            <p class = "content is-size-5"><strong>Intuitive Interactions</strong><br></p>
+                            <p class = "content">
+                                One of the major benefits of HoloLens over other 3D imaging platforms is how
+                                intuitive it is to interact with. To take advantage of this, we wanted to add the ability to use
+                                <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/gestures">HoloLens gestures</a>
+                                to move the cell model.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class = "notification has-text-light" style="background: #678B8C;">
+                            <p class = "content is-size-5"><strong>Sticky Note Integration</strong><br></p>
+                            <p class = "content">
+                                Besides BC Cancer, our other sponsor was Microsoft's Sticky Notes team.
+                                Our goal was the integrate the Sticky Notes API into our app
+                                so that researchers could place holographic notes and access them from anywhere.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class = "notification has-text-light" style="background: #678B8C;">
+                            <p class = "content is-size-5"><strong>Jupyter Notebook API</strong><br></p>
+                            <p class = "content">
+                                Our most important goal was to find a way to integrate our application
+                                into a cancer researcher's workflow. We decided to focus on Jupyter Notebook
+                                since it is one of the most widely used tools for data analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <iframe width=100% height="500" src="https://www.youtube.com/embed/4OouJKwl5bM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
             </div>
         </section>
         <footer class="footer">
             <div class="columns">
-                <div class="column is-1"></div>
+                <div class="column is-2"></div>
                 <div class="column">
                     <nav class="navbar is-light" role="navigation">
                         <div class="navbar-brand">
-                            <div class="navbar-item has-text-right"> Coded by Lynn Zhang </div>
+                            <div class="navbar-item has-text-left">Coded by Lynn Zhang</div>
                         </div>
                         <div class="navbar-menu">
-                            <div class="navbar-end">
+                            <div class="navbar-end is-mobile">
                                 <a class="navbar-item" href = "mailto:lynnzhang7@gmail.com" target = "_blank">
                                     <span class="icon">
                                         <i class="fas fa-envelope"></i>
@@ -92,7 +189,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="column is-1"></div>
+                <div class="column is-2"></div>
             </div>
         </footer>
     </body>

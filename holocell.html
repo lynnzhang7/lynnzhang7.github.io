@@ -12,6 +12,9 @@
         <!--link rel="stylesheet" href="assets/styles/debug.css"-->
         <script src = "scripts/navbar.js"></script>
         <style>
+            #square-image {
+                display: none;
+            }
             @media (max-width: 800px) {
                 :root {
                     font-size: 80%;
@@ -25,6 +28,12 @@
             @media (max-width: 500px) {
                 #holocell {
                     font-size: 24px !important;
+                }
+                #full-image {
+                  display: none;
+                }
+                #square-image {
+                  display: block;
                 }
             }
             p, ol, ul {
@@ -65,7 +74,8 @@
                 <div class="columns">
                     <div class="column is-8 is-offset-2">
                         <figure class="image">
-                            <img src="assets/images/holo_full.jpg" id="head-image">
+                            <img src="assets/images/holo_full.jpg" id="full-image">
+                            <img src="assets/images/holo.png" id="square-image">
                             <div class="level is-overlay" style="top: 50%; transform: translate(0%, -50%);">
                                 <div class="level-item">
                                     <div>

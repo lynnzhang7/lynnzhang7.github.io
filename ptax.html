@@ -6,41 +6,45 @@
         <title>Lynn Zhang</title>
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Gilda+Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
         <link rel="stylesheet" href="node_modules/bulma-start/css/main.css">
         <link rel="stylesheet" href="assets/styles/main.css">
         <!--link rel="stylesheet" href="assets/styles/debug.css"-->
         <script src = "scripts/navbar.js"></script>
         <style>
-            @media (max-width: 672px) {
+            @media (max-width: 800px) {
                 :root {
-                    font-size: 90%;
+                    font-size: 80%;
                 }
             }
-            .hero, .box {
-                background-color: #E8F1F0; /* E1E9E8*/
+            @media (max-width: 1000px) {
+                #holocell {
+                    font-size: 36px !important;
+                }
             }
-            .box:hover {
-                border: 5px solid transparent !important;
+            @media (max-width: 500px) {
+                #holocell {
+                    font-size: 24px !important;
+                }
             }
-            .title {
-                font-size: 28px !important;
+            p, ol, ul {
+                font-size: 110% !important;
                 line-height: 1.5 !important;
             }
-            .footer {
-                border-top: 3px solid white !important;
+            #hero-top {
+                background: linear-gradient(to bottom, white 0%,white 50%,white 50%,#E8F1F0 50%,#E8F1F0 100%); /* W3C */
             }
-
-            .notification {
-                position: relative !important;
-                top: 50px !important;
+            #hero-bottom {
+                background-color: #E8F1F0; /* E1E9E8*/
             }
+        }
         </style>
     </head>
     <body>
         <nav class = "navbar" role = "navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a role="button" class="navbar-burger is-size-1" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <!--a class="navbar-item" href="index.html"> Lynn Zhang </a-->
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -48,29 +52,129 @@
             </div>
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-end">
-                    <a class="navbar-item has-text-weight-bold" href="index.html"> Home </a>
+                    <a class="navbar-item" href="index.html"> Home </a>
                     <a class="navbar-item" href="about.html"> About </a>
                 </div>
             </div>
         </nav>
-        <div class=container>
-            <div class="notification is-primary has-text-centered">
-                move me<br>
-                i don't understand <br>
-                why this is taking up<br>
-                 the entire width
-            </div>
-        </div>
-        <section class="hero is-medium">
-            <div class="hero-head">
-                <div class="container">
+        <section class = "hero is-small" id = "hero-top">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <figure class="image">
+                            <img src="assets/images/ottawa_full.JPG">
+                            <div class="level is-overlay" style="top: 50%; transform: translate(0%, -50%);">
+                                <div class="level-item">
+                                    <div>
+                                        <h1 class = "subtitle is-size-5 has-text-centered has-text-light">Statistics Canada</h1><br><br><br><br>
+                                        <h1 class = "title is-size-1 has-text-centered has-text-light" id="holocell">PTAX Redesign</h1><br><br><br><br>
+                                        <h1 class = "subtitle is-size-5 has-text-centered has-text-light">Summer 2017 </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            <div class = "hero-body">
-                hi
+        </section>
+        <section class = "hero is-small" id = "hero-bottom">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">The Project</p>
+                    </div>
+                    <div class="column">
+                        <div class = "content">
+                            <p>
+                                The purpose of PTAX Redesign was to make old application more easy and functional to use.
+                                PTAX enables other teams at <a href="https://www.statcan.gc.ca/eng/start" target="=_blank">Statistics Canada</a>
+                                to calculate the property tax index for the
+                                consumer price index, which is used to to calculate many various federal statistics,
+                                including Canada’s inflation rate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">Tech Stack</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            The majority of the application was coded in
+                            <a href="https://code.visualstudio.com/docs/languages/csharp" target="_blank">C#</a>. I also used
+                            <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2017" target="_blank">SQL</a> to interact
+                            with the back-end databases and <a href="https://visualstudio.microsoft.com/tfs/" target="_blank">TFS</a>
+                            as a version control system.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">My Role</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            My internship position at Statistics Canada was as a systems development programmer.
+                            Throughout the internship, I was assigned various tasks by my manager, but my main
+                            responsibility was to develop the Reference Tables section of our application.
+                        </p>
+                        <p class="content">
+                            The Reference Tables section was where users would find information about Canada’s
+                            provinces, cities, municipalities, and strata, such as population distribution and
+                            average housing prices. I implemented the full stack of this feature: developing the
+                            user interface using <a href="https://docs.microsoft.com/en-us/dotnet/framework/winforms/"
+                            target="_blank">Windows Forms</a> and C#, manipulating the PTAX database using SQL
+                            queries and stored procedures, and following the <a href="https://cslanet.com/" target="_blank">CSLA</a>
+                            design pattern to connect the UI with the back-end.
+                        </p>
+                        <p class="content">
+                            Since the team we were building the application for was located at Statistics Canada,
+                            I also had the opportunity to demo my work to them several times and collect feedback.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">Reflection</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            This was the first tech internship I’ve done, and I learned a few key general lessons
+                            about how work is different from school during the four months.
+                        </p>
+                        <div class = "content">
+                            <ol>
+                                <li><strong>Ambiguity:</strong> our client had created a 40 page document of requirements and use-cases,
+                                    modified from the old PTAX application. Even so, there were still many ambiguities
+                                    that needed to be resolved. I learned to expect these ambiguities and  to resolve
+                                    them efficiently.</li>
+                                <li><strong>Other people’s code:</strong> I learned very quickly in this internship that I would not be
+                                    writing a lot of my own code. I spent my first three weeks reading documentation and
+                                    the codebase and trying to understand all the different classes and what they were
+                                    used for: it was the first time I had seen such an extensive framework and it was
+                                    very overwhelming. I needed to become comfortable with the framework in order to
+                                    implement my various features, and I found the best way to do so was to jump in
+                                    and try coding something, rather than reading the documentation word for word.</li>
+                                <li><strong>Don’t break the build:</strong> I broke the build twice during my internship, and both times
+                                    caused a lot of stress and commotion for my team. I learned very quickly to carefully
+                                    check my code before I pushed it.</li>
+                            </ol>
+                        </div>
+                        <p class = "content">
+                            Incredibly grateful to Statistics Canada for giving me the opportunity to do an internship with them:
+                            I learned a lot of basic skills for tech jobs, I met some amazing people, I got to explore
+                            Ottawa during Canada’s 150th and in general had an amazing summer (:
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br><br>
             </div>
         </section>
-
         <footer class="footer">
             <div class="columns">
                 <div class="column is-2"></div>

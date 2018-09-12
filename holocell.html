@@ -27,7 +27,7 @@
                     font-size: 24px !important;
                 }
             }
-            p {
+            p, ol, ul {
                 font-size: 110% !important;
                 line-height: 1.5 !important;
             }
@@ -185,26 +185,44 @@
                 </div>
                 <div class="columns">
                     <div class="column is-2 is-offset-2">
-                        <p class = "content has-text-weight-bold">My Role</p>
+                        <p class = "content has-text-weight-bold">Final Product</p>
                     </div>
                     <div class="column">
                         <p class = "content">
-                            My most important development contribution was to the Jupyter Notebook integration.
-                            After various user testing sessions with reseachers, I understood what their vision was
-                            and took the lead on creating a plan to integrate it into our application. This involved
-                            a thorough understanding of the codebase created by the previous intern group, as well
-                            a detailed understanding of the current state of all the features of our project. We began implementing this
-                            feature in the last few weeks of our internship, so we didn't have time to create something
-                            completely new: this feature needed to fit within the constraints of the features we already had.
-                            With the plan that I started, my team was able to finish the basis of this feature ahead of schedule.
+                            By the end of the four months, my team had integrated gestures, created a Python API for
+                            Jupyter Notebook, and added the idea of sessions to the app. While we had implemented a
+                            way for researchers to annotate the cell model using a version of sticky notes, we were
+                            not able to integrate the Microsoft Sticky Notes API due to issues with authentication.
+                            <br><br>Some of the gestures we implemented included:
+                        </p>
+                        <div class = content>
+                            <ul>
+                                <li>Air-tap and drag to rotate the model</li>
+                                <li>Two-handed pinch and drag to resize the model</li>
+                                <li>Double-air-tap to place a note</li>
+                            </ul>
+                        </div>
+                        <p class = "content">
+                            Our Python API enabled researchers to push cell groups &mdash; the name of the group and a
+                            list of cells that belong to that group &mdash; to the app at runtime. This feature
+                            allowed the most flexibility to the researcher: for example, if they wanted to see all the
+                            cell types in the app, they could push a list of cells for each cell type.
                         </p>
                         <p class = "content">
-                            In addition to being a developer, my unique role on the team was the UX champion. I worked closely
-                            with our designer to implement designs into both components of the application,
-                            and evaluated how the design aligned with the functionality. I was the primary
-                            contributor to the web application interface, and also implemented various aspects of
-                            the HoloLens interface.
+                            We wanted to take advantage of the web app as much as possible, since HoloLens was l
+                            imited at consistently detecting small motions such as typing, so we came up with the
+                            following pages:
                         </p>
+                        <div class = "content">
+                            <ol>
+                                <li><strong>Dashboard page:</strong> where the user can move the cell model by clicking
+                                    on the mouse transform box and switch between different modes</li>
+                                <li><strong>Filter page:</strong> a list of all the cell groups, their colors and their visibility status</li>
+                                <li><strong>Sticky page:</strong> any sticky notes created in HoloLens would show up here. From this page,
+                                    they can be edited or deleted, with everything synced with the HoloLens app.</li>
+                                <li><strong>Help page:</strong> some FAQs and helpful tips</li>
+                            </ol>
+                        </div>
                     </div>
                     <div class="column is-2"></div>
                 </div>
@@ -224,7 +242,7 @@
                         </figure>
                         <br>
                         <p class="content is-size-6 has-text-centered">
-                            Figure 2: Screenshot of the sticky notes page in the web app
+                            Figure 3: Screenshot of the sticky notes page in the web app
                         </p>
                     </div>
                     <div class="column">
@@ -234,7 +252,7 @@
                         </figure>
                         <br>
                         <p class="content is-size-6 has-text-centered">
-                            Figure 3: Screenshot of the filter page in the web app
+                            Figure 2: Screenshot of the filter page in the web app
                         </p>
                         <br>
                         <figure class="image screenshot">
@@ -248,8 +266,6 @@
                     </div>
                     <div class="column is-2"></div>
                 </div>
-
-
                 <div class="columns">
                     <div class="column is-2 is-offset-2">
                         <p class = "content has-text-weight-bold">Tech Stack</p>
@@ -261,6 +277,44 @@
                             <a href="https://www.photonengine.com/pun" target="_blank">Photon</a> as a networking
                             framework, and all the cell data and session data was stored in Azure.
                             Our Jupyter Notebook API was written in Python.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">My Role</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            My most important development contribution was to the Jupyter Notebook integration.
+                            After various user testing sessions with reseachers, I understood what their vision was
+                            and took the lead on creating a plan to integrate it into our application. This involved
+                            a very thorough understanding of the entire codebase, since this feature needed to fit within
+                            the constraints of the features we already had.
+                            With this plan, my team was able to finish the basis of this feature ahead of schedule.
+                        </p>
+                        <p class = "content">
+                            In addition to being a developer, my unique role on the team was the UX champion. I worked closely
+                            with our designer to implement designs into both components of the application,
+                            and evaluated how the design aligned with the functionality. I was the primary
+                            contributor to the web application interface, and also implemented various aspects of
+                            the HoloLens interface.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">Reflection</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            I learned so much more than I expected to during this internship. Tons of soft skills: our first three weeks were dedicated to planning, organizing, creating and presenting a vision. The importance of working in a team: I learned very quickly to rely on my teammates and ask for help when I needed it. Time management and prioritization: throughout the internship, we struggled with having too much we wanted to do and not enough time to do it. We had to cut a couple features which was difficult to do, but we were able to implement the core features that would make our app useful to a researcher. From my development work, I experienced many times that the core part of a feature usually doesn’t take much time to implement, but figuring out all the small bugs and end cases that result is time-consuming and not worth getting sidetracked by in the initial stages of implementation.
+                        </p>
+                        <p>
+                            Thanks to Microsoft for giving me this amazing opportunity and my awesome team for a great summer!
+
                         </p>
                     </div>
                     <div class="column is-2"></div>

@@ -31,13 +31,8 @@
                 font-size: 110% !important;
                 line-height: 1.5 !important;
             }
-            .h2 {
-                color: white;
-            }
-            .box {
-                position: relative !important;
-                bottom: 20% !important;
-                height: 500px;
+            .screenshot {
+                border: 2px solid #CDD;
             }
             #hero-top {
                 background: linear-gradient(to bottom, white 0%,white 50%,white 50%,#E8F1F0 50%,#E8F1F0 100%); /* W3C */
@@ -45,7 +40,6 @@
             #hero-bottom {
                 background-color: #E8F1F0; /* E1E9E8*/
             }
-
         }
         </style>
     </head>
@@ -75,9 +69,9 @@
                             <div class="level is-overlay" style="top: 50%; transform: translate(0%, -50%);">
                                 <div class="level-item">
                                     <div>
-                                        <h1 class = "subtitle is-size-6 has-text-centered has-text-light">Microsoft Garage </h1><br><br><br>
-                                        <h1 class = "title is-size-1 has-text-centered has-text-light" id="holocell">Holographic Cell Visualizer </h1><br><br><br>
-                                        <h1 class = "subtitle is-size-6 has-text-centered has-text-light">Summer 2018 </h1>
+                                        <h1 class = "subtitle is-size-5 has-text-centered has-text-light">Microsoft Garage </h1><br><br><br><br>
+                                        <h1 class = "title is-size-1 has-text-centered has-text-light" id="holocell">Holographic Cell Visualizer </h1><br><br><br><br>
+                                        <h1 class = "subtitle is-size-5 has-text-centered has-text-light">Summer 2018 </h1>
                                     </div>
                                 </div>
                             </div>
@@ -95,9 +89,12 @@
                     <div class="column">
                         <div class = "content">
                             <p>
-                                Holographic Cell Visualizer is a mixed reality HoloLens application for
-                                cancer researchers, developed by interns from the Microsoft Garage program. Our application enables
-                                researchers to intuitively interact with and explore holograms of 3D genomic data.
+                                Holographic Cell Visualizer is a mixed reality
+                                <a href="https://www.microsoft.com/en-us/hololens" target = "_blank">HoloLens</a>
+                                application for cancer researchers, developed by interns from the Microsoft Garage
+                                program. Our project, sponsored by
+                                <a href="http://www.bccancer.bc.ca/" target="_blank">BC Cancer,</a>
+                                enables researchers to intuitively interact with and explore holograms of 3D genomic data.
                             </p>
                         </div>
                     </div>
@@ -105,19 +102,26 @@
                 </div>
                 <div class="columns">
                     <div class="column is-2 is-offset-2">
-                        <p class = "content has-text-weight-bold">Microsoft Garage</p>
+                        <p class = "content has-text-weight-bold">Background</p>
                     </div>
                     <div class="column">
                         <p class = "content">
-                            The Microsoft Garage program is a 16 week internship, where interns
-                            are typically put in groups of six &mdash; five developers, one designer &mdash; to focus on a single project.
+                            The <a href"https://www.microsoft.com/en-us/garage/" target = "_blank">Microsoft Garage</a>
+                            program is a 16 week internship, where interns are typically put in a group of seven &mdash;
+                            five developers, one designer, one PM &mdash; to focus on a single project. Garage is a very
+                            unique internship because the intern team is driving the project: coming up with a vision,
+                            deciding on features, organizing sponsor meetings, planning sprints, all with limited supervision
+                            from our manager and our coaches.
+
                             Most of these projects start from scratch, but my team had the unique opportunity to
-                            carry on a project that was started by a previous intern group.
+                            continue a project that was started by a previous intern group.
                             <br><br>
-                            The project that we started on already had the major components of our app down: the processing
+                            The project that we started on (<a href=https://youtu.be/4OouJKwl5bM target = "_blank">video summary here</a>)
+                            already had the major components of our app: the processing
                             and rendering of the 50,000 cells, different modes to explore different aspects of the data, and the
-                            beginnings of a companion web application. When my intern group started, we reassessed the state of
-                            the project with our sponsor BC Cancer, and decided on the three key features we wanted to add.<br><br>
+                            beginnings of a companion web application.
+                            When my intern group started, we reassessed the state of
+                            the project with our sponsors, and decided on the three key features we wanted to add.<br><br>
                         </p>
                     </div>
                     <div class="column is-2"></div>
@@ -130,7 +134,7 @@
                             <p class = "content">
                                 One of the major benefits of HoloLens over other 3D imaging platforms is how
                                 intuitive it is to interact with. To take advantage of this, we wanted to add the ability to use
-                                <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/gestures">HoloLens gestures</a>
+                                <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/gestures" target = "_blank">HoloLens gestures</a>
                                 to move the cell model.
                             </p>
                         </div>
@@ -139,7 +143,9 @@
                         <div class = "notification has-text-light" style="background: #678B8C;">
                             <p class = "content is-size-5"><strong>Sticky Note Integration</strong><br></p>
                             <p class = "content">
-                                Besides BC Cancer, our other sponsor was Microsoft's Sticky Notes team.
+                                Besides BC Cancer, our other sponsor was Microsoft's
+                                <a href="https://www.microsoft.com/en-ca/p/microsoft-sticky-notes/9nblggh4qghw" target = "_blank">
+                                Sticky Notes</a> team.
                                 Our goal was the integrate the Sticky Notes API into our app
                                 so that researchers could place holographic notes and access them from anywhere.
                             </p>
@@ -150,20 +156,116 @@
                             <p class = "content is-size-5"><strong>Jupyter Notebook API</strong><br></p>
                             <p class = "content">
                                 Our most important goal was to find a way to integrate our application
-                                into a cancer researcher's workflow. We decided to focus on Jupyter Notebook
+                                into a cancer researcher's workflow. We decided to focus on
+                                <a href="http://jupyter.org/" target = "_blank">Jupyter Notebook</a>
                                 since it is one of the most widely used tools for data analysis.
                             </p>
                         </div>
                     </div>
                     <div class="column is-2"></div>
                 </div>
+                <br><br>
                 <div class="columns">
-                    <div class="column is-2"></div>
-                    <div class="column">
-                        <iframe width=100% height="500" src="https://www.youtube.com/embed/4OouJKwl5bM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="column is-offset-4">
+                        <p class = "content">
+                            Besides the three goals listed above, one general goal we had was to increase
+                            the functionality of the companion web
+                            app. While the HoloLens is great at visualizing and interacting with data, it has
+                            limitations for small, precise actions. We assessed all the features we had and
+                            the new features we wanted to implement, and delegated aspects of them to either the
+                            HoloLens app or the web app based on which was more suitable.
+                        </p>
+                        <p class = "content">
+                            We also wanted to implement some sort of saved state, so that researchers would be
+                            able to make some observations, and come back to the same sticky notes, same cell
+                            model orientation, etc. to continue observing or to share with a fellow researcher.
+                        </p>
                     </div>
                     <div class="column is-2"></div>
                 </div>
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">My Role</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            My most important development contribution was to the Jupyter Notebook integration.
+                            After various user testing sessions with reseachers, I understood what their vision was
+                            and took the lead on creating a plan to integrate it into our application. This involved
+                            a thorough understanding of the codebase created by the previous intern group, as well
+                            a detailed understanding of the current state of all the features of our project. We began implementing this
+                            feature in the last few weeks of our internship, so we didn't have time to create something
+                            completely new: this feature needed to fit within the constraints of the features we already had.
+                            With the plan that I started, my team was able to finish the basis of this feature ahead of schedule.
+                        </p>
+                        <p class = "content">
+                            In addition to being a developer, my unique role on the team was the UX champion. I worked closely
+                            with our designer to implement designs into both components of the application,
+                            and evaluated how the design aligned with the functionality. I was the primary
+                            contributor to the web application interface, and also implemented various aspects of
+                            the HoloLens interface.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <div class="columns"> <!--TODO: add modals to images-->
+                    <div class="column is-offset-2">
+                        <br>
+                        <figure class="image screenshot">
+                        	<img src="assets/images/dashboard_page.PNG">
+                        </figure>
+                        <br>
+                        <p class="content is-size-6 has-text-centered">
+                            Screenshot of the dashboard page in the web app
+                        </p>
+                        <br>
+                        <figure class="image screenshot">
+                        	<img src="assets/images/sticky_page.PNG">
+                        </figure>
+                        <br>
+                        <p class="content is-size-6 has-text-centered">
+                            Screenshot of the sticky notes page in the web app
+                        </p>
+                    </div>
+                    <div class="column">
+                        <br>
+                        <figure class="image screenshot">
+                            <img src="assets/images/filter_page.PNG">
+                        </figure>
+                        <br>
+                        <p class="content is-size-6 has-text-centered">
+                            Screenshot of the filter page in the web app
+                        </p>
+                        <br>
+                        <figure class="image screenshot">
+                        	<img src="assets/images/help_page.PNG">
+                        </figure>
+                        <br>
+                        <p class="content is-size-6 has-text-centered">
+                            Screenshot of the help page in the web app
+                        </p>
+                        <br>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+
+
+                <div class="columns">
+                    <div class="column is-2 is-offset-2">
+                        <p class = "content has-text-weight-bold">Tech Stack</p>
+                    </div>
+                    <div class="column">
+                        <p class = "content">
+                            Both the HoloLens web app components were developed using <a href="https://unity3d.com/">
+                            Unity</a>, with C# as the primary language. The web app and HoloLens communicated using
+                            <a href="https://www.photonengine.com/pun" target="_blank">Photon</a> as a networking
+                            framework, and all the cell data and session data was stored in Azure.
+                            Our Jupyter Notebook API was written in Python.
+                        </p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br><br>
             </div>
         </section>
         <footer class="footer">

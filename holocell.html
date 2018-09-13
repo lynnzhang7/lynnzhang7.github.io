@@ -183,10 +183,10 @@
                 <div class="columns">
                     <div class="column is-offset-4">
                         <p class = "content">
-                            Besides the three goals listed above, one general goal we had was to increase
+                            Besides the three goals listed above, we also wanted to increase
                             the functionality of the companion web
                             app. While the HoloLens is great at visualizing and interacting with data, it has
-                            limitations for small, precise actions. We assessed all the features we had and
+                            limitations for small, precise actions, such as typing. We assessed all the features we had and
                             the new features we wanted to implement, and delegated aspects of them to either the
                             HoloLens app or the web app based on which was more suitable.
                         </p>
@@ -205,28 +205,26 @@
                     <div class="column">
                         <p class = "content">
                             By the end of the four months, my team had integrated gestures, created a Python API for
-                            Jupyter Notebook, and added the idea of sessions to the app. While we had implemented a
+                            Jupyter Notebook, and added the saved states to the app. Although we were able to implemented a
                             way for researchers to annotate the cell model using a version of sticky notes, we were
                             not able to integrate the Microsoft Sticky Notes API due to issues with authentication.
                             <br><br>Some of the gestures we implemented included:
                         </p>
                         <div class = content>
                             <ul>
-                                <li>Air-tap and drag to rotate the model</li>
-                                <li>Two-handed pinch and drag to resize the model</li>
+                                <li>Air-tap-and-drag to rotate the model</li>
+                                <li>Two-handed-pinch-and-drag to resize the model</li>
                                 <li>Double-air-tap to place a note</li>
                             </ul>
                         </div>
                         <p class = "content">
-                            Our Python API enabled researchers to push cell groups &mdash; the name of the group and a
+                            Our Python API enabled researchers to send cell groups &mdash; the name of the group and a
                             list of cells that belong to that group &mdash; to the app at runtime. This feature
-                            allowed the most flexibility to the researcher: for example, if they wanted to see all the
+                            allowed for the most flexibility: for example, if a researcher wanted to see all the
                             cell types in the app, they could push a list of cells for each cell type.
                         </p>
                         <p class = "content">
-                            We wanted to take advantage of the web app as much as possible, since HoloLens was l
-                            imited at consistently detecting small motions such as typing, so we came up with the
-                            following pages:
+                            We expanded our web app to have multiple pages, each with its own purpose.
                         </p>
                         <div class = "content">
                             <ol>
@@ -313,7 +311,7 @@
                             In addition to being a developer, my unique role on the team was the UX champion. I worked closely
                             with our designer to implement designs into both components of the application,
                             and evaluated how the design aligned with the functionality. I was the primary
-                            contributor to the web application interface, and also implemented various aspects of
+                            contributor to the web application interface (see above figures), and also implemented many aspects of
                             the HoloLens interface.
                         </p>
                     </div>
@@ -325,12 +323,26 @@
                     </div>
                     <div class="column">
                         <p class = "content">
-                            I learned so much more than I expected to during this internship. Tons of soft skills: our first three weeks were dedicated to planning, organizing, creating and presenting a vision. The importance of working in a team: I learned very quickly to rely on my teammates and ask for help when I needed it. Time management and prioritization: throughout the internship, we struggled with having too much we wanted to do and not enough time to do it. We had to cut a couple features which was difficult to do, but we were able to implement the core features that would make our app useful to a researcher. From my development work, I experienced many times that the core part of a feature usually doesn’t take much time to implement, but figuring out all the small bugs and end cases that result is time-consuming and not worth getting sidetracked by in the initial stages of implementation.
+                            This internship was fast-paced, stressful, but incredibly rewarding. Here are some of my main takeaways:
                         </p>
-                        <p>
-                            Thanks to Microsoft for giving me this amazing opportunity and my awesome team for a great summer!
-
-                        </p>
+                        <div class="content">
+                            <ul>
+                                <li>Importance of soft skills along with development: our first three weeks were dedicated to planning
+                                    features, organizing sprints, and creating a vision. Our app would not be what it is now if we had
+                                    jumped straight into code.</li>
+                                <li>The importance of working in a team: I learned very quickly to rely on my teammates for a fresh
+                                    perspective and ask for help when I needed it.</li>
+                                <li>Time management and prioritization: throughout the entire internship, we struggled with having too much
+                                    we wanted to do and not enough time to implement everything. We had to cut a couple features,
+                                    but by prioritizing our features we were able to implement the core features that would make our
+                                    app useful to a researcher.
+                                <li>Striving for that <a href="http://labs.sogeti.com/the-minimum-lovable-product/" target="_blank">MLP</a>:
+                                    I noticed a pattern from all the features I implemented into our application. The core part of the feature
+                                    usually didn't take much time to implement, but figuring out all the small bugs and exceptional cases that
+                                    result is time-consuming, and it's important not to get sidetracked by these in the initial stages of
+                                    implementation.
+                            </ul>
+                        </div>
                     </div>
                     <div class="column is-2"></div>
                 </div>

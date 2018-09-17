@@ -21,16 +21,19 @@
                 font-size: 110% !important;
                 line-height: 1.5 !important;
             }
+            body, .navbar, .footer {
+                background-color: #444 !important;
+            }
         </style>
     </head>
     <body>
         <br>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <div class="content title">
-                            yi.koen
+                        <div class="content title has-text-light">
+                            koenyi
                         </div>
                     </a>
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -239,5 +242,33 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <nav class="navbar is-light" role="navigation">
+                    <div class="navbar-brand">
+                        <div class="navbar-item has-text-left has-text-light">Coded by Lynn Zhang</div>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="navbar-end is-mobile">
+                            <a class="navbar-item" href = "mailto:lynnzhang7@gmail.com" target = "_blank">
+                                <span class="icon has-text-light">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item" href="https://www.linkedin.com/in/lynnzhang7/" target = "_blank">
+                                <span class="icon has-text-light">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </span>
+                            </a>
+                            <a class="navbar-item" href="https://www.pinterest.ca/lynnzhang7/" target = "_blank">
+                                <span class="icon has-text-light">
+                                    <i class="fab fa-pinterest"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
     </body>
 </html>

@@ -12,17 +12,30 @@
         <!--link rel="stylesheet" href="assets/styles/debug.css"-->
         <script src = "scripts/navbar.js"></script>
         <style>
+            p, ol, ul, {
+                font-size: 110% !important;
+                line-height: 1.5 !important;
+            }
+            body {
+                border: 15px solid hsl(0, 0%, 96%);
+            }
+            .icon {
+                color: grey;
+                font-size: 20px;
+                padding: 20px;
+            }
+            .icon:hover {
+                color: hsl(217, 71%, 53%);
+            }
             @media (max-width: 672px) {
                 :root {
                     font-size: 90%;
                 }
             }
-            p, ol, ul {
-                font-size: 110% !important;
-                line-height: 1.5 !important;
-            }
-            body {
-                border: 20px solid #555;
+            @media (max-width: 1000px) {
+                body {
+                    border: 0px;
+                }
             }
         </style>
     </head>
@@ -32,11 +45,9 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <div class="content title">
-                            koenyi
-                        </div>
+                        <div class="title">koenyi</div>
                     </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -44,8 +55,8 @@
                 </div>
                 <div class="navbar-menu" id="navMenu">
                     <div class="navbar-end">
-                        <a class="navbar-item" href="#"> Home </a>
-                        <a class="navbar-item" href="#"> About </a>
+                        <a class="navbar-item has-text-weight-bold" href="koen.html">Home</a>
+                        <a class="navbar-item" href="koenabout.html">About</a>
                     </div>
                 </div>
             </div>
@@ -244,31 +255,26 @@
         </div>
         <br><br>
         <footer class="footer">
-            <div class="container">
-                <nav class="navbar is-light" role="navigation">
-                    <div class="navbar-brand">
-                        <div class="navbar-item has-text-left">Coded by Lynn Zhang</div>
-                    </div>
-                    <div class="navbar-menu">
-                        <div class="navbar-end is-mobile">
-                            <a class="navbar-item" href = "mailto:lynnzhang7@gmail.com" target = "_blank">
-                                <span class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </span>
-                            </a>
-                            <a class="navbar-item" href="https://www.linkedin.com/in/lynnzhang7/" target = "_blank">
-                                <span class="icon">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </span>
-                            </a>
-                            <a class="navbar-item" href="https://www.pinterest.ca/lynnzhang7/" target = "_blank">
-                                <span class="icon">
-                                    <i class="fab fa-pinterest"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
+            <div class="content has-text-centered">
+                <a href="https://www.instagram.com/koen.art/" target = "_blank">
+                    <span class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+                <a href="https://www.facebook.com/koen.yi" target = "_blank">
+                    <span class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                </a>
+                <a href = "mailto:yi.koen@gmail.com" target = "_blank">
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </a>
+                <br><br>
+                <p>
+                    Created by <a href="https://lynnzhang.ca/" target="_blank">Lynn Zhang</a>
+                </p>
             </div>
         </footer>
     </body>
